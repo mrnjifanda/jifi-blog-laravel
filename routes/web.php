@@ -2,21 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/', [App\Http\Controllers\PostController::class, 'home'])->name('home');
+Route::get('/post/{post}', [App\Http\Controllers\PostController::class, 'show'])->name('show');
 
-Route::get('/', function () {
-    return view('welcome', ['title' => 'Home - Jifi Blog']);
-});
+Route::get('/dashboard', [App\Http\Controllers\PostController::class, 'dashboard'])->middleware(['auth'])->name('dashboard');
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/dashboard/create', [App\Http\Controllers\PostController::class, 'create'])->middleware(['auth'])->name('create');
+Route::post('/dashboard/create', [App\Http\Controllers\PostController::class, 'store'])->middleware(['auth'])->name('store');
+
+Route::get('/dashboard/edit/{post}', [App\Http\Controllers\PostController::class, 'edit'])->middleware(['auth'])->name('edit');
+Route::put('/dashboard/edit/{post}', [App\Http\Controllers\PostController::class, 'update'])->middleware(['auth'])->name('update');
+
+Route::delete('/dashboard/delete/{post}', [App\Http\Controllers\PostController::class, 'destroy'])->middleware(['auth'])->name('delete');
+
+
+require __DIR__.'/auth.php';
