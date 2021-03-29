@@ -1,4 +1,4 @@
-<p align="center"><a href="https://jifitech.com" target="_blank"><img src="https://github.com/mrnjifanda/jifi-blog-laravel/blob/master/public/images/apple-touch-icon.png" width="400"></a></p>
+<p align="center"><a href="https://jifitech.com" target="_blank"><img src="https://github.com/mrnjifanda/jifi-blog-laravel/blob/master/public/images/apple-touch-icon.png" width="200"></a></p>
 
 
 ## About Jifi Blog (Laravel)
