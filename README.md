@@ -1,7 +1,11 @@
-<p align="center"><a href="https://jifitech.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://jifitech.com" target="_blank"><img src="https://github.com/mrnjifanda/jifi-blog-laravel/blob/master/public/images/apple-touch-icon.png" width="400"></a></p>
 
 
 ## About Jifi Blog (Laravel)
+Simple Blog (Authentication and CRUD ) width Laravel 8.
+
+## Screen
+<p align="center"><a href="https://jifitech.com" target="_blank"><img src="https://github.com/mrnjifanda/jifi-blog-laravel/blob/master/public/images/screens/dashboard.jpeg" width="1000"></a></p>
 
 ### Premium Partners
 
